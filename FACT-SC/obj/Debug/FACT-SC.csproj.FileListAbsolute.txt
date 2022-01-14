@@ -3,10 +3,10 @@ C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\FACT-SC.exe
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\FACT-SC.pdb
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT-SC.csproj.AssemblyReference.cache
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT-SC.csproj.SuggestedBindingRedirects.cache
-C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.Form1.resources
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.Properties.Resources.resources
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT-SC.csproj.GenerateResource.cache
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT-SC.csproj.CoreCompileInputs.cache
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT-SC.exe
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT-SC.pdb
-C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.Form2.resources
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.login.resources
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.inicio.resources

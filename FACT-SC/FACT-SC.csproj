@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="articulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="articulos.Designer.cs">
+      <DependentUpon>articulos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cotizacion.Designer.cs">
+      <DependentUpon>cotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="facturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="facturacion.Designer.cs">
+      <DependentUpon>facturacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,8 +76,26 @@
     <Compile Include="inicio.Designer.cs">
       <DependentUpon>inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="parametrizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="parametrizacion.Designer.cs">
+      <DependentUpon>parametrizacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reporteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reporteria.Designer.cs">
+      <DependentUpon>reporteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usuarios.Designer.cs">
+      <DependentUpon>usuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
