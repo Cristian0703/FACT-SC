@@ -10,3 +10,5 @@ C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT-SC.exe
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT-SC.pdb
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.login.resources
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.inicio.resources
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.usuarios.resources
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.articulos.resources

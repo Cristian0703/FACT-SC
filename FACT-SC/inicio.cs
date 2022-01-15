@@ -59,5 +59,18 @@ namespace FACT_SC
             formulario.Show();
             this.Hide();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            login formulario = new login();
+            formulario.Show();
+            this.Hide();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }
