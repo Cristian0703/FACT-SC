@@ -47,9 +47,12 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha_expiracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(327, 19);
+            this.label1.Location = new System.Drawing.Point(384, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 25);
             this.label1.TabIndex = 0;
@@ -174,7 +177,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(660, 13);
+            this.button5.Location = new System.Drawing.Point(728, 59);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(131, 29);
             this.button5.TabIndex = 26;
@@ -185,7 +188,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(660, 211);
+            this.button4.Location = new System.Drawing.Point(756, 261);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(103, 48);
             this.button4.TabIndex = 25;
@@ -195,7 +198,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(660, 157);
+            this.button3.Location = new System.Drawing.Point(756, 207);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(103, 48);
             this.button3.TabIndex = 24;
@@ -205,7 +208,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(660, 103);
+            this.button2.Location = new System.Drawing.Point(756, 153);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(103, 48);
             this.button2.TabIndex = 23;
@@ -215,7 +218,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(660, 49);
+            this.button1.Location = new System.Drawing.Point(756, 99);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 48);
             this.button1.TabIndex = 22;
@@ -229,13 +232,31 @@
             this.Codigo,
             this.nombre,
             this.cantidad,
+            this.precio,
             this.categoria,
             this.Fecha_expiracion,
             this.descripcion});
-            this.dataGridView1.Location = new System.Drawing.Point(53, 288);
+            this.dataGridView1.Location = new System.Drawing.Point(36, 207);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(691, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(691, 184);
             this.dataGridView1.TabIndex = 27;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(38, 173);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 16);
+            this.label8.TabIndex = 28;
+            this.label8.Text = "Precio";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(113, 169);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(121, 20);
+            this.textBox4.TabIndex = 29;
             // 
             // Codigo
             // 
@@ -243,6 +264,7 @@
             this.Codigo.HeaderText = "codigo";
             this.Codigo.Name = "Codigo";
             this.Codigo.ReadOnly = true;
+            this.Codigo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // nombre
             // 
@@ -250,6 +272,7 @@
             this.nombre.HeaderText = "nombre";
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
+            this.nombre.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // cantidad
             // 
@@ -257,25 +280,34 @@
             this.cantidad.HeaderText = "cantidad";
             this.cantidad.Name = "cantidad";
             this.cantidad.ReadOnly = true;
+            this.cantidad.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // precio
+            // 
+            this.precio.HeaderText = "precio";
+            this.precio.Name = "precio";
+            this.precio.ReadOnly = true;
+            this.precio.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // categoria
             // 
-            this.categoria.Frozen = true;
             this.categoria.HeaderText = "categoria";
             this.categoria.Name = "categoria";
             this.categoria.ReadOnly = true;
+            this.categoria.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Fecha_expiracion
             // 
-            this.Fecha_expiracion.Frozen = true;
             this.Fecha_expiracion.HeaderText = "Fecha expiracion";
             this.Fecha_expiracion.Name = "Fecha_expiracion";
             this.Fecha_expiracion.ReadOnly = true;
+            this.Fecha_expiracion.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // descripcion
             // 
             this.descripcion.HeaderText = "descripción";
             this.descripcion.Name = "descripcion";
+            this.descripcion.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.descripcion.Width = 150;
             // 
             // articulos
@@ -283,7 +315,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(892, 403);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -335,9 +369,12 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn categoria;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_expiracion;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcion;

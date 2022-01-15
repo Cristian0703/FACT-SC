@@ -190,6 +190,7 @@
             this.checkBox1.TabIndex = 16;
             this.checkBox1.Text = "mostrar contraseña";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // button1
             // 
@@ -234,7 +235,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(618, 57);
+            this.button5.Location = new System.Drawing.Point(590, 57);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(131, 29);
             this.button5.TabIndex = 21;
@@ -247,7 +248,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 381);
+            this.ClientSize = new System.Drawing.Size(752, 381);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
