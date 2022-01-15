@@ -15,21 +15,21 @@ namespace FACT_SC
         public usuarios()
         {
             InitializeComponent();
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(btnAgregarUsuarios,"Nuevo usuario");
+            toolTip.SetToolTip(btnEliminarUsuarios,"Eliminar usuario");
+            toolTip.SetToolTip(btnModificarUsuario, "Modificar usuario");
+            toolTip.SetToolTip(btnBuscar, "Realizar busqueda");
+            toolTip.SetToolTip(btnAtras,"Atrás");
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            if (checkBox1.Checked) {
-                checkBox1.Text = "ocultar contraseña";
-                txtPassword.PasswordChar = '\0';
-            }
-            else{
-                checkBox1.Text = "mostrar contraseña";
-                txtPassword.PasswordChar = '*';
-            }
+            agregarUsuarios formulario = new agregarUsuarios();
+            formulario.ShowDialog();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnLogOut_Click(object sender, EventArgs e)
         {
             inicio formulario = new inicio();
             formulario.Show();

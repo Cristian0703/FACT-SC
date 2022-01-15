@@ -28,252 +28,188 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtApellidos = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnModificarUsuario = new System.Windows.Forms.Button();
+            this.btnEliminarUsuarios = new System.Windows.Forms.Button();
+            this.btnAgregarUsuarios = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(27, 53);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(264, 20);
+            this.textBox1.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(326, 52);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(140, 21);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigo,
+            this.nombre,
+            this.apellidos,
+            this.email,
+            this.rol,
+            this.password});
+            this.dataGridView1.Location = new System.Drawing.Point(27, 146);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(596, 275);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // codigo
+            // 
+            this.codigo.Frozen = true;
+            this.codigo.HeaderText = "Código";
+            this.codigo.Name = "codigo";
+            this.codigo.ReadOnly = true;
+            // 
+            // nombre
+            // 
+            this.nombre.Frozen = true;
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            // 
+            // apellidos
+            // 
+            this.apellidos.HeaderText = "Apellidos";
+            this.apellidos.Name = "apellidos";
+            // 
+            // email
+            // 
+            this.email.HeaderText = "Email";
+            this.email.Name = "email";
+            // 
+            // rol
+            // 
+            this.rol.HeaderText = "Rol";
+            this.rol.Name = "rol";
+            // 
+            // password
+            // 
+            this.password.HeaderText = "Contraseña";
+            this.password.Name = "password";
+            this.password.ReadOnly = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(142, 62);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(256, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "ID";
+            this.label1.Size = new System.Drawing.Size(128, 25);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "USUARIOS";
             // 
-            // label2
+            // btnModificarUsuario
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(90, 97);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre";
+            this.btnModificarUsuario.BackgroundImage = global::FACT_SC.Properties.Resources.icoModificarUsuario;
+            this.btnModificarUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnModificarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnModificarUsuario.FlatAppearance.BorderSize = 0;
+            this.btnModificarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarUsuario.Location = new System.Drawing.Point(227, 81);
+            this.btnModificarUsuario.Name = "btnModificarUsuario";
+            this.btnModificarUsuario.Size = new System.Drawing.Size(64, 39);
+            this.btnModificarUsuario.TabIndex = 12;
+            this.btnModificarUsuario.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // btnEliminarUsuarios
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(81, 139);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Apellidos";
+            this.btnEliminarUsuarios.BackgroundImage = global::FACT_SC.Properties.Resources.icoEliminarUsuario;
+            this.btnEliminarUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEliminarUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminarUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnEliminarUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarUsuarios.Location = new System.Drawing.Point(130, 81);
+            this.btnEliminarUsuarios.Name = "btnEliminarUsuarios";
+            this.btnEliminarUsuarios.Size = new System.Drawing.Size(64, 39);
+            this.btnEliminarUsuarios.TabIndex = 11;
+            this.btnEliminarUsuarios.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // btnAgregarUsuarios
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(101, 186);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 24);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Correo";
+            this.btnAgregarUsuarios.BackgroundImage = global::FACT_SC.Properties.Resources.icoAgregarUsuario;
+            this.btnAgregarUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregarUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnAgregarUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarUsuarios.Location = new System.Drawing.Point(27, 81);
+            this.btnAgregarUsuarios.Name = "btnAgregarUsuarios";
+            this.btnAgregarUsuarios.Size = new System.Drawing.Size(64, 39);
+            this.btnAgregarUsuarios.TabIndex = 7;
+            this.btnAgregarUsuarios.UseVisualStyleBackColor = true;
+            this.btnAgregarUsuarios.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtID
+            // btnBuscar
             // 
-            this.txtID.Location = new System.Drawing.Point(183, 62);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(219, 20);
-            this.txtID.TabIndex = 4;
+            this.btnBuscar.BackgroundImage = global::FACT_SC.Properties.Resources.icoBuscador;
+            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscar.FlatAppearance.BorderSize = 0;
+            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscar.Location = new System.Drawing.Point(472, 47);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(55, 30);
+            this.btnBuscar.TabIndex = 2;
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // txtNombre
+            // btnAtras
             // 
-            this.txtNombre.Location = new System.Drawing.Point(183, 101);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(219, 20);
-            this.txtNombre.TabIndex = 5;
-            // 
-            // txtApellidos
-            // 
-            this.txtApellidos.Location = new System.Drawing.Point(183, 144);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(219, 20);
-            this.txtApellidos.TabIndex = 6;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(183, 190);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(219, 20);
-            this.txtEmail.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(64, 285);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 24);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Contraseña";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(184, 240);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(120, 20);
-            this.radioButton1.TabIndex = 11;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "administrador";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(330, 240);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(69, 20);
-            this.radioButton2.TabIndex = 12;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "cajero";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(131, 234);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(38, 24);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "Rol";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(325, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 25);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "USUARIOS";
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(183, 290);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(219, 20);
-            this.txtPassword.TabIndex = 15;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(261, 316);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(141, 20);
-            this.checkBox1.TabIndex = 16;
-            this.checkBox1.Text = "mostrar contraseña";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(618, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 48);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Consultar";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(618, 169);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 48);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Nuevo";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(618, 223);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 48);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Actualizar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(618, 277);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(103, 48);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "Eliminar";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(590, 57);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(131, 29);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "Menú principal";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnAtras.BackgroundImage = global::FACT_SC.Properties.Resources.icoAtras;
+            this.btnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtras.FlatAppearance.BorderSize = 0;
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Location = new System.Drawing.Point(599, 9);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(43, 45);
+            this.btnAtras.TabIndex = 13;
+            this.btnAtras.Tag = "";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(752, 381);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtApellidos);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(654, 446);
+            this.Controls.Add(this.btnAtras);
+            this.Controls.Add(this.btnModificarUsuario);
+            this.Controls.Add(this.btnEliminarUsuarios);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnAgregarUsuarios);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "usuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "usuarios";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,25 +217,20 @@
 
         #endregion
 
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellidos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rol;
+        private System.Windows.Forms.DataGridViewTextBoxColumn password;
+        private System.Windows.Forms.Button btnAgregarUsuarios;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtApellidos;
-        private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnEliminarUsuarios;
+        private System.Windows.Forms.Button btnModificarUsuario;
+        private System.Windows.Forms.Button btnAtras;
     }
 }

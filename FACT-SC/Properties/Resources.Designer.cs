@@ -63,6 +63,16 @@ namespace FACT_SC.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icoAgregarUsuario {
+            get {
+                object obj = ResourceManager.GetObject("icoAgregarUsuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icoApagar {
             get {
                 object obj = ResourceManager.GetObject("icoApagar", resourceCulture);
@@ -83,6 +93,26 @@ namespace FACT_SC.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icoAtras {
+            get {
+                object obj = ResourceManager.GetObject("icoAtras", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icoBuscador {
+            get {
+                object obj = ResourceManager.GetObject("icoBuscador", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icoCotizacion {
             get {
                 object obj = ResourceManager.GetObject("icoCotizacion", resourceCulture);
@@ -93,9 +123,29 @@ namespace FACT_SC.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icoEliminarUsuario {
+            get {
+                object obj = ResourceManager.GetObject("icoEliminarUsuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icoFacturacion {
             get {
                 object obj = ResourceManager.GetObject("icoFacturacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icoGuardarUsuario {
+            get {
+                object obj = ResourceManager.GetObject("icoGuardarUsuario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +166,26 @@ namespace FACT_SC.Properties {
         internal static System.Drawing.Bitmap icoLogOut {
             get {
                 object obj = ResourceManager.GetObject("icoLogOut", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icoModificarUsuario {
+            get {
+                object obj = ResourceManager.GetObject("icoModificarUsuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icoNuevoUsuario {
+            get {
+                object obj = ResourceManager.GetObject("icoNuevoUsuario", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

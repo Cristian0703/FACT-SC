@@ -19,9 +19,9 @@ namespace FACT_SC
             toolTip.SetToolTip(btnUsuarios, "Usuarios");
             toolTip.SetToolTip(btnArticulos, "Artículos");
             toolTip.SetToolTip(btnFacturacion, "Facturación");
-            toolTip.SetToolTip(btnReporteria, "Cotización");
+            toolTip.SetToolTip(btnReporteria, "Reportería");
             toolTip.SetToolTip(btnParametrizacion, "Parametrización");
-            toolTip.SetToolTip(btnCotizacion, "Reportería");
+            toolTip.SetToolTip(btnCotizacion, "Cotización");
             toolTip.SetToolTip(btnLogOut, "Cerrar sesión");
         }
  
