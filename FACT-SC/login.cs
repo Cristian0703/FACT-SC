@@ -15,6 +15,9 @@ namespace FACT_SC
         public login()
         {
             InitializeComponent();
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(btnAceptar, "Iniciar sesión");
+            toolTip.SetToolTip(btnSalir,"Salir del sistema");
         }
 
         private void Form1_Load(object sender, EventArgs e)

@@ -63,6 +63,16 @@ namespace FACT_SC.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icoApagar {
+            get {
+                object obj = ResourceManager.GetObject("icoApagar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icoArticulos {
             get {
                 object obj = ResourceManager.GetObject("icoArticulos", resourceCulture);
