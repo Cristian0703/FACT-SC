@@ -28,27 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inicio));
+            this.btnUsuarios = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btnArticulos = new System.Windows.Forms.Button();
+            this.btnFacturacion = new System.Windows.Forms.Button();
+            this.btnReporteria = new System.Windows.Forms.Button();
+            this.btnParametrizacion = new System.Windows.Forms.Button();
+            this.btnCotizacion = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnUsuarios
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(111, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 78);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Usuarios";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnUsuarios.BackgroundImage = global::FACT_SC.Properties.Resources.icoUsuarios;
+            this.btnUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.Location = new System.Drawing.Point(111, 115);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnUsuarios.Size = new System.Drawing.Size(106, 78);
+            this.btnUsuarios.TabIndex = 0;
+            this.btnUsuarios.UseVisualStyleBackColor = true;
+            this.btnUsuarios.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -60,82 +65,96 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Bienvenido al sistema";
             // 
-            // button2
+            // btnArticulos
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(346, 115);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(106, 78);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Artículos";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnArticulos.BackgroundImage = global::FACT_SC.Properties.Resources.icoArticulos;
+            this.btnArticulos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnArticulos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnArticulos.FlatAppearance.BorderSize = 0;
+            this.btnArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnArticulos.Location = new System.Drawing.Point(346, 115);
+            this.btnArticulos.Name = "btnArticulos";
+            this.btnArticulos.Size = new System.Drawing.Size(106, 78);
+            this.btnArticulos.TabIndex = 3;
+            this.btnArticulos.UseVisualStyleBackColor = true;
+            this.btnArticulos.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnFacturacion
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(578, 115);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(106, 78);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Facturación";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnFacturacion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFacturacion.BackgroundImage")));
+            this.btnFacturacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnFacturacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFacturacion.FlatAppearance.BorderSize = 0;
+            this.btnFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFacturacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacturacion.Location = new System.Drawing.Point(578, 115);
+            this.btnFacturacion.Name = "btnFacturacion";
+            this.btnFacturacion.Size = new System.Drawing.Size(106, 78);
+            this.btnFacturacion.TabIndex = 4;
+            this.btnFacturacion.UseVisualStyleBackColor = true;
+            this.btnFacturacion.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnReporteria
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(578, 252);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(106, 78);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Reportería";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnReporteria.BackgroundImage = global::FACT_SC.Properties.Resources.icoReporte;
+            this.btnReporteria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnReporteria.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReporteria.FlatAppearance.BorderSize = 0;
+            this.btnReporteria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReporteria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteria.Location = new System.Drawing.Point(578, 252);
+            this.btnReporteria.Name = "btnReporteria";
+            this.btnReporteria.Size = new System.Drawing.Size(106, 78);
+            this.btnReporteria.TabIndex = 7;
+            this.btnReporteria.UseVisualStyleBackColor = true;
+            this.btnReporteria.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // btnParametrizacion
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(346, 252);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(106, 78);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Parametrización";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnParametrizacion.BackgroundImage = global::FACT_SC.Properties.Resources.icoParametrizar;
+            this.btnParametrizacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnParametrizacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnParametrizacion.FlatAppearance.BorderSize = 0;
+            this.btnParametrizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnParametrizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnParametrizacion.Location = new System.Drawing.Point(346, 252);
+            this.btnParametrizacion.Name = "btnParametrizacion";
+            this.btnParametrizacion.Size = new System.Drawing.Size(106, 78);
+            this.btnParametrizacion.TabIndex = 6;
+            this.btnParametrizacion.UseVisualStyleBackColor = true;
+            this.btnParametrizacion.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // btnCotizacion
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(111, 252);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(106, 78);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Cotización";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnCotizacion.BackgroundImage = global::FACT_SC.Properties.Resources.icoCotizacion;
+            this.btnCotizacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCotizacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCotizacion.FlatAppearance.BorderSize = 0;
+            this.btnCotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCotizacion.Location = new System.Drawing.Point(111, 252);
+            this.btnCotizacion.Name = "btnCotizacion";
+            this.btnCotizacion.Size = new System.Drawing.Size(106, 78);
+            this.btnCotizacion.TabIndex = 5;
+            this.btnCotizacion.UseVisualStyleBackColor = true;
+            this.btnCotizacion.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // btnLogOut
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(407, 395);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(125, 23);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Cerrar sesión";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(559, 395);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(125, 23);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "Cerrar sistema";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btnLogOut.BackgroundImage = global::FACT_SC.Properties.Resources.icoLogOut;
+            this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogOut.FlatAppearance.BorderSize = 0;
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.Location = new System.Drawing.Point(749, 16);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(43, 45);
+            this.btnLogOut.TabIndex = 8;
+            this.btnLogOut.Tag = "";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.button7_Click);
             // 
             // inicio
             // 
@@ -143,15 +162,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(804, 441);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnLogOut);
+            this.Controls.Add(this.btnReporteria);
+            this.Controls.Add(this.btnParametrizacion);
+            this.Controls.Add(this.btnCotizacion);
+            this.Controls.Add(this.btnFacturacion);
+            this.Controls.Add(this.btnArticulos);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUsuarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "inicio";
@@ -164,14 +182,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnArticulos;
+        private System.Windows.Forms.Button btnFacturacion;
+        private System.Windows.Forms.Button btnReporteria;
+        private System.Windows.Forms.Button btnParametrizacion;
+        private System.Windows.Forms.Button btnCotizacion;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }

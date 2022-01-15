@@ -15,6 +15,14 @@ namespace FACT_SC
         public inicio()
         {
             InitializeComponent();
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(btnUsuarios, "Usuarios");
+            toolTip.SetToolTip(btnArticulos, "Artículos");
+            toolTip.SetToolTip(btnFacturacion, "Facturación");
+            toolTip.SetToolTip(btnReporteria, "Cotización");
+            toolTip.SetToolTip(btnParametrizacion, "Parametrización");
+            toolTip.SetToolTip(btnCotizacion, "Reportería");
+            toolTip.SetToolTip(btnLogOut, "Cerrar sesión");
         }
  
 
@@ -66,11 +74,5 @@ namespace FACT_SC
             formulario.Show();
             this.Hide();
         }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
     }
 }

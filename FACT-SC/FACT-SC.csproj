@@ -113,6 +113,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="usuarios.resx">
       <DependentUpon>usuarios.cs</DependentUpon>
@@ -129,6 +130,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoArticulos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoCotizacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoFacturacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoParametrizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoReporte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoUsuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoLogIn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoLogOut.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
