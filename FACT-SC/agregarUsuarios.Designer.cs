@@ -41,8 +41,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.btnAtras = new System.Windows.Forms.Button();
             this.btnGuardarUsuarios = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -170,6 +170,20 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
+            // btnGuardarUsuarios
+            // 
+            this.btnGuardarUsuarios.BackgroundImage = global::FACT_SC.Properties.Resources.icoGuardado;
+            this.btnGuardarUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnGuardarUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGuardarUsuarios.FlatAppearance.BorderSize = 0;
+            this.btnGuardarUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarUsuarios.Location = new System.Drawing.Point(60, 69);
+            this.btnGuardarUsuarios.Name = "btnGuardarUsuarios";
+            this.btnGuardarUsuarios.Size = new System.Drawing.Size(64, 39);
+            this.btnGuardarUsuarios.TabIndex = 19;
+            this.btnGuardarUsuarios.UseVisualStyleBackColor = true;
+            this.btnGuardarUsuarios.Click += new System.EventHandler(this.btnGuardarUsuarios_Click);
+            // 
             // btnAtras
             // 
             this.btnAtras.BackgroundImage = global::FACT_SC.Properties.Resources.icoAtras;
@@ -185,19 +199,6 @@
             this.btnAtras.Tag = "";
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.btnLogOut_Click);
-            // 
-            // btnGuardarUsuarios
-            // 
-            this.btnGuardarUsuarios.BackgroundImage = global::FACT_SC.Properties.Resources.icoGuardarUsuario;
-            this.btnGuardarUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnGuardarUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGuardarUsuarios.FlatAppearance.BorderSize = 0;
-            this.btnGuardarUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarUsuarios.Location = new System.Drawing.Point(60, 69);
-            this.btnGuardarUsuarios.Name = "btnGuardarUsuarios";
-            this.btnGuardarUsuarios.Size = new System.Drawing.Size(64, 39);
-            this.btnGuardarUsuarios.TabIndex = 19;
-            this.btnGuardarUsuarios.UseVisualStyleBackColor = true;
             // 
             // agregarUsuarios
             // 

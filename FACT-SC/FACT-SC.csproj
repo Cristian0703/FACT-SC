@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="agregarArticulos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarArticulos.Designer.cs">
+      <DependentUpon>agregarArticulos.cs</DependentUpon>
+    </Compile>
     <Compile Include="articulos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     <Compile Include="usuarios.Designer.cs">
       <DependentUpon>usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="agregarArticulos.resx">
+      <DependentUpon>agregarArticulos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="articulos.resx">
       <DependentUpon>articulos.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +196,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icoAtras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoAgregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoEliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoModificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoGuardado.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

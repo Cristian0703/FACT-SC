@@ -38,11 +38,11 @@
             this.rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnAtras = new System.Windows.Forms.Button();
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.btnEliminarUsuarios = new System.Windows.Forms.Button();
             this.btnAgregarUsuarios = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnAtras = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,9 +120,25 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "USUARIOS";
             // 
+            // btnAtras
+            // 
+            this.btnAtras.BackgroundImage = global::FACT_SC.Properties.Resources.icoAtras;
+            this.btnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAtras.FlatAppearance.BorderSize = 0;
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.Location = new System.Drawing.Point(599, 9);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(43, 45);
+            this.btnAtras.TabIndex = 13;
+            this.btnAtras.Tag = "";
+            this.btnAtras.UseVisualStyleBackColor = true;
+            this.btnAtras.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // btnModificarUsuario
             // 
-            this.btnModificarUsuario.BackgroundImage = global::FACT_SC.Properties.Resources.icoModificarUsuario;
+            this.btnModificarUsuario.BackgroundImage = global::FACT_SC.Properties.Resources.icoModificar;
             this.btnModificarUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnModificarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificarUsuario.FlatAppearance.BorderSize = 0;
@@ -135,7 +151,7 @@
             // 
             // btnEliminarUsuarios
             // 
-            this.btnEliminarUsuarios.BackgroundImage = global::FACT_SC.Properties.Resources.icoEliminarUsuario;
+            this.btnEliminarUsuarios.BackgroundImage = global::FACT_SC.Properties.Resources.icoEliminar;
             this.btnEliminarUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnEliminarUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminarUsuarios.FlatAppearance.BorderSize = 0;
@@ -148,7 +164,7 @@
             // 
             // btnAgregarUsuarios
             // 
-            this.btnAgregarUsuarios.BackgroundImage = global::FACT_SC.Properties.Resources.icoAgregarUsuario;
+            this.btnAgregarUsuarios.BackgroundImage = global::FACT_SC.Properties.Resources.icoAgregar;
             this.btnAgregarUsuarios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAgregarUsuarios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregarUsuarios.FlatAppearance.BorderSize = 0;
@@ -172,22 +188,6 @@
             this.btnBuscar.Size = new System.Drawing.Size(55, 30);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // btnAtras
-            // 
-            this.btnAtras.BackgroundImage = global::FACT_SC.Properties.Resources.icoAtras;
-            this.btnAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAtras.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAtras.FlatAppearance.BorderSize = 0;
-            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtras.Location = new System.Drawing.Point(599, 9);
-            this.btnAtras.Name = "btnAtras";
-            this.btnAtras.Size = new System.Drawing.Size(43, 45);
-            this.btnAtras.TabIndex = 13;
-            this.btnAtras.Tag = "";
-            this.btnAtras.UseVisualStyleBackColor = true;
-            this.btnAtras.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // usuarios
             // 

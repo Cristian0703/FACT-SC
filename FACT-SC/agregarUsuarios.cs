@@ -43,5 +43,10 @@ namespace FACT_SC
         {
             this.Hide();
         }
+
+        private void btnGuardarUsuarios_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
