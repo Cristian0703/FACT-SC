@@ -15,6 +15,31 @@ namespace FACT_SC
         public facturacion()
         {
             InitializeComponent();
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(btnAtras,"Atrás");
+            toolTip.SetToolTip(btnAgregar, "Agrega artículo a la compra");
+            toolTip.SetToolTip(btnEliminar, "Eliminar artículo");
+            toolTip.SetToolTip(btnModificar, "Modificar artículo");
+            toolTip.SetToolTip(btnBuscar, "Realizar búsqueda");
+            toolTip.SetToolTip(btnPagar, "Pagar");
+            toolTip.SetToolTip(btnImprimir,"Imprimir fáctura");
+
+            txtSubTotal.Enabled = false;
+            txtDescuento.Enabled = false;
+            txtTotal.Enabled = false;
+            txtITBIS.Enabled = false;
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            inicio formulario = new inicio();
+            formulario.Show();
+            this.Hide();
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

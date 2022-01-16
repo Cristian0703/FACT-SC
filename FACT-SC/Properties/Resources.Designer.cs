@@ -183,6 +183,16 @@ namespace FACT_SC.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icoImprimir {
+            get {
+                object obj = ResourceManager.GetObject("icoImprimir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icoLogIn {
             get {
                 object obj = ResourceManager.GetObject("icoLogIn", resourceCulture);
@@ -226,6 +236,16 @@ namespace FACT_SC.Properties {
         internal static System.Drawing.Bitmap icoNuevoUsuario {
             get {
                 object obj = ResourceManager.GetObject("icoNuevoUsuario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icoPagar {
+            get {
+                object obj = ResourceManager.GetObject("icoPagar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

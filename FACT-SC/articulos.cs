@@ -19,7 +19,7 @@ namespace FACT_SC
             toolTip.SetToolTip(btnAgregar, "Nuevo artículo");
             toolTip.SetToolTip(btnEliminar, "Eliminar artículo");
             toolTip.SetToolTip(btnModificar, "Modificar artículo");
-            toolTip.SetToolTip(btnBuscar, "Realizar busqueda");
+            toolTip.SetToolTip(btnBuscar, "Realizar búsqueda");
             toolTip.SetToolTip(btnAtras, "Atrás");
         }
 

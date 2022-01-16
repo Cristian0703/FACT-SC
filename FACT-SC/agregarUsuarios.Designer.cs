@@ -225,7 +225,7 @@
             this.MaximizeBox = false;
             this.Name = "agregarUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Nuevo Usuario";
+            this.Text = "Nuevo usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
 

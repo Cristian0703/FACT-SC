@@ -114,6 +114,9 @@
     <EmbeddedResource Include="articulos.resx">
       <DependentUpon>articulos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="facturacion.resx">
+      <DependentUpon>facturacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,6 +211,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icoGuardado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoImprimir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icoPagar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
