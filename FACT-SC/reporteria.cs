@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace FACT_SC
 {
-    public partial class reporteria : Form
+    public partial class Reporteria : Form
     {
-        public reporteria()
+        public Reporteria()
         {
             InitializeComponent();
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            inicio formulario = new inicio();
+            formulario.Show();
+            this.Hide();
         }
     }
 }

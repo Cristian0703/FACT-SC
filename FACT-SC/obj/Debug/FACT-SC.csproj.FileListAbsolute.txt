@@ -15,3 +15,6 @@ C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.agregarUsuarios
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.usuarios.resources
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.agregarArticulos.resources
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.facturacion.resources
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.cotizacion.resources
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.parametrizacion.resources
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT_SC.Reporteria.resources

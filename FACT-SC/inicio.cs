@@ -63,7 +63,7 @@ namespace FACT_SC
 
         private void button4_Click(object sender, EventArgs e)
         {
-            reporteria formulario = new reporteria();
+            Reporteria formulario = new Reporteria();
             formulario.Show();
             this.Hide();
         }

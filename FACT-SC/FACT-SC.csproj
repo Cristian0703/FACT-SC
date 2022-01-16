@@ -114,6 +114,9 @@
     <EmbeddedResource Include="articulos.resx">
       <DependentUpon>articulos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="cotizacion.resx">
+      <DependentUpon>cotizacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="facturacion.resx">
       <DependentUpon>facturacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="parametrizacion.resx">
+      <DependentUpon>parametrizacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,6 +141,9 @@
     </Compile>
     <EmbeddedResource Include="agregarUsuarios.resx">
       <DependentUpon>agregarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reporteria.resx">
+      <DependentUpon>reporteria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usuarios.resx">
       <DependentUpon>usuarios.cs</DependentUpon>

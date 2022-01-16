@@ -15,6 +15,25 @@ namespace FACT_SC
         public cotizacion()
         {
             InitializeComponent();
+            ToolTip toolTip = new ToolTip();
+            toolTip.SetToolTip(btnAtras, "Atrás");
+            toolTip.SetToolTip(btnAgregar, "Agrega artículo");
+            toolTip.SetToolTip(btnEliminar, "Eliminar artículo");
+            toolTip.SetToolTip(btnModificar, "Modificar artículo");
+            toolTip.SetToolTip(btnBuscar, "Realizar búsqueda");
+            toolTip.SetToolTip(btnImprimir, "Imprimir cotización");
+
+            txtSubTotal.Enabled = false;
+            txtDescuento.Enabled = false;
+            txtTotal.Enabled = false;
+            txtITBIS.Enabled = false;
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            inicio formulario = new inicio();
+            formulario.Show();
+            this.Hide();
         }
     }
 }

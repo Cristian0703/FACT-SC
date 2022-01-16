@@ -16,5 +16,12 @@ namespace FACT_SC
         {
             InitializeComponent();
         }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            inicio formulario = new inicio();
+            formulario.Show();
+            this.Hide();
+        }
     }
 }
