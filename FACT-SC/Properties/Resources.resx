@@ -184,4 +184,10 @@
   <data name="icoPagar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icoPagar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IconoLogo125x125" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\IconoLogo125x125.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IconoLogo32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\IconoLogo32x32.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
