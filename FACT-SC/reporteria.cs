@@ -15,6 +15,7 @@ namespace FACT_SC
         public Reporteria()
         {
             InitializeComponent();
+
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
