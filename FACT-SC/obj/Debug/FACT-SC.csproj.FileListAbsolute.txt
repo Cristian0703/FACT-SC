@@ -37,3 +37,15 @@ C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\obj\Debug\FACT-SC.csproj.CopyComp
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\AxShockwaveFlashObjects.dll
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\CrystalDecisions.Windows.Forms.dll
 C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\EntityFramework.dll
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\EntityFramework.xml
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\ServiceStack.Common.dll
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\ServiceStack.Interfaces.dll
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\ServiceStack.OrmLite.dll
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\ServiceStack.OrmLite.SqlServer.dll
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\ServiceStack.Text.dll
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\ServiceStack.Common.xml
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\ServiceStack.OrmLite.xml
+C:\Users\Cristian\source\repos\FACT-SC\FACT-SC\bin\Debug\ServiceStack.Text.xml
