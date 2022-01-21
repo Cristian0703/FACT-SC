@@ -15,11 +15,12 @@ namespace FACT_SC
 {
     public partial class agregarUsuarios : Form
     {
-  
-        public agregarUsuarios()
+        int Rol;
+        public agregarUsuarios(int pRol)
 
         {
             InitializeComponent();
+            Rol = pRol;
             ToolTip toolTip = new ToolTip();
             toolTip.SetToolTip(btnGuardarUsuarios, "Guardar usuario");
             toolTip.SetToolTip(btnAtras, "Atrás");
@@ -40,7 +41,7 @@ namespace FACT_SC
 
         private void button5_Click(object sender, EventArgs e)
         {
-            inicio formulario = new inicio();
+            usuarios formulario = new usuarios(Rol);
             formulario.Show();
             this.Hide();
         }
@@ -77,7 +78,7 @@ namespace FACT_SC
 
                 Usuario1 usuarios = new Usuario1();
                 usuarios.contraseña = txtPassword.Text;
-                usuarios.email = txtEmail.Text;
+                usuarios.Email = txtEmail.Text;
                 usuarios.personasID = ultimo;
                 usuarios.rol = rol;
 

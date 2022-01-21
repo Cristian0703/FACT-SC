@@ -47,7 +47,7 @@
             this.btnUsuarios.FlatAppearance.BorderSize = 0;
             this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsuarios.Location = new System.Drawing.Point(111, 115);
+            this.btnUsuarios.Location = new System.Drawing.Point(346, 115);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnUsuarios.Size = new System.Drawing.Size(106, 78);
@@ -73,7 +73,7 @@
             this.btnArticulos.FlatAppearance.BorderSize = 0;
             this.btnArticulos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnArticulos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnArticulos.Location = new System.Drawing.Point(346, 115);
+            this.btnArticulos.Location = new System.Drawing.Point(122, 252);
             this.btnArticulos.Name = "btnArticulos";
             this.btnArticulos.Size = new System.Drawing.Size(106, 78);
             this.btnArticulos.TabIndex = 3;
@@ -88,7 +88,7 @@
             this.btnFacturacion.FlatAppearance.BorderSize = 0;
             this.btnFacturacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFacturacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFacturacion.Location = new System.Drawing.Point(578, 115);
+            this.btnFacturacion.Location = new System.Drawing.Point(122, 115);
             this.btnFacturacion.Name = "btnFacturacion";
             this.btnFacturacion.Size = new System.Drawing.Size(106, 78);
             this.btnFacturacion.TabIndex = 4;
@@ -133,7 +133,7 @@
             this.btnCotizacion.FlatAppearance.BorderSize = 0;
             this.btnCotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCotizacion.Location = new System.Drawing.Point(111, 252);
+            this.btnCotizacion.Location = new System.Drawing.Point(578, 115);
             this.btnCotizacion.Name = "btnCotizacion";
             this.btnCotizacion.Size = new System.Drawing.Size(106, 78);
             this.btnCotizacion.TabIndex = 5;

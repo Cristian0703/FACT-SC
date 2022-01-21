@@ -12,14 +12,16 @@ namespace FACT_SC
 {
     public partial class parametrizacion : Form
     {
-        public parametrizacion()
+        int Rol;
+        public parametrizacion(int pRol)
         {
             InitializeComponent();
+            Rol = pRol;
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            inicio formulario = new inicio();
+            inicio formulario = new inicio(Rol);
             formulario.Show();
             this.Hide();
         }

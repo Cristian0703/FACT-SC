@@ -32,9 +32,7 @@ namespace FACT_SC
 
                 while (reader.Read())
                 {
-                    ultimo = reader.GetInt32(0);
-                   
-                    
+                    ultimo = reader.GetInt32(0);                                   
                 }
                 reader.Close();
                 conexion.Close();
@@ -42,5 +40,6 @@ namespace FACT_SC
             }
 
         }
-    }   //SELECT MAX(id_Personas) FROM tb_Personas
+       
+    }   
 }

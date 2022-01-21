@@ -12,8 +12,10 @@ namespace FACT_SC
 {
     public partial class cotizacion : Form
     {
-        public cotizacion()
+        int Rol;
+        public cotizacion(int pRol)
         {
+            Rol = pRol;
             InitializeComponent();
             ToolTip toolTip = new ToolTip();
             toolTip.SetToolTip(btnAtras, "Atrás");
@@ -31,7 +33,7 @@ namespace FACT_SC
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            inicio formulario = new inicio();
+            inicio formulario = new inicio(Rol);
             formulario.Show();
             this.Hide();
         }

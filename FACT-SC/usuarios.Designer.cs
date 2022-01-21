@@ -28,22 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxBuscar = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAtras = new System.Windows.Forms.Button();
             this.btnModificarUsuario = new System.Windows.Forms.Button();
             this.btnEliminarUsuarios = new System.Windows.Forms.Button();
             this.btnAgregarUsuarios = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.db_facturacionDataSet = new FACT_SC.db_facturacionDataSet();
+            this.dbfacturacionDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_facturacionDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbfacturacionDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
@@ -53,62 +58,67 @@
             this.textBox1.Size = new System.Drawing.Size(264, 20);
             this.textBox1.TabIndex = 0;
             // 
-            // comboBox1
+            // comboBoxBuscar
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(326, 52);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(140, 21);
-            this.comboBox1.TabIndex = 1;
+            this.comboBoxBuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxBuscar.FormattingEnabled = true;
+            this.comboBoxBuscar.Items.AddRange(new object[] {
+            "-----",
+            "ID",
+            "Nombre",
+            "Apellidos",
+            "Telefono",
+            "Email",
+            "Contraseña"});
+            this.comboBoxBuscar.Location = new System.Drawing.Point(326, 52);
+            this.comboBoxBuscar.Name = "comboBoxBuscar";
+            this.comboBoxBuscar.Size = new System.Drawing.Size(140, 21);
+            this.comboBoxBuscar.TabIndex = 1;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codigo,
             this.nombre,
+            this.id,
             this.apellidos,
+            this.telefono,
             this.email,
-            this.rol,
-            this.password});
+            this.contraseña});
             this.dataGridView1.Location = new System.Drawing.Point(27, 146);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(596, 275);
             this.dataGridView1.TabIndex = 6;
             // 
-            // codigo
-            // 
-            this.codigo.Frozen = true;
-            this.codigo.HeaderText = "Código";
-            this.codigo.Name = "codigo";
-            this.codigo.ReadOnly = true;
-            // 
             // nombre
             // 
-            this.nombre.Frozen = true;
             this.nombre.HeaderText = "Nombre";
             this.nombre.Name = "nombre";
+            // 
+            // id
+            // 
+            this.id.HeaderText = "ID";
+            this.id.Name = "id";
             // 
             // apellidos
             // 
             this.apellidos.HeaderText = "Apellidos";
             this.apellidos.Name = "apellidos";
             // 
+            // telefono
+            // 
+            this.telefono.HeaderText = "Telefono";
+            this.telefono.Name = "telefono";
+            // 
             // email
             // 
             this.email.HeaderText = "Email";
             this.email.Name = "email";
             // 
-            // rol
+            // contraseña
             // 
-            this.rol.HeaderText = "Rol";
-            this.rol.Name = "rol";
-            // 
-            // password
-            // 
-            this.password.HeaderText = "Contraseña";
-            this.password.Name = "password";
-            this.password.ReadOnly = true;
+            this.contraseña.HeaderText = "Contraseña";
+            this.contraseña.Name = "contraseña";
             // 
             // label1
             // 
@@ -188,6 +198,17 @@
             this.btnBuscar.Size = new System.Drawing.Size(55, 30);
             this.btnBuscar.TabIndex = 2;
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // db_facturacionDataSet
+            // 
+            this.db_facturacionDataSet.DataSetName = "db_facturacionDataSet";
+            this.db_facturacionDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dbfacturacionDataSetBindingSource
+            // 
+            this.dbfacturacionDataSetBindingSource.DataSource = this.db_facturacionDataSet;
+            this.dbfacturacionDataSetBindingSource.Position = 0;
             // 
             // usuarios
             // 
@@ -202,7 +223,7 @@
             this.Controls.Add(this.btnAgregarUsuarios);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxBuscar);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -210,6 +231,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuarios";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.db_facturacionDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbfacturacionDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -218,19 +241,21 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxBuscar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn apellidos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn rol;
-        private System.Windows.Forms.DataGridViewTextBoxColumn password;
         private System.Windows.Forms.Button btnAgregarUsuarios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnEliminarUsuarios;
         private System.Windows.Forms.Button btnModificarUsuario;
         private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.BindingSource dbfacturacionDataSetBindingSource;
+        private db_facturacionDataSet db_facturacionDataSet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apellidos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn contraseña;
     }
 }

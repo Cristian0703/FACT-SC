@@ -12,9 +12,11 @@ namespace FACT_SC
 {
     public partial class articulos : Form
     {
-        public articulos()
+        int Rol;
+        public articulos(int pRol)
         {
             InitializeComponent();
+            Rol = pRol;
             ToolTip toolTip = new ToolTip();
             toolTip.SetToolTip(btnAgregar, "Nuevo artículo");
             toolTip.SetToolTip(btnEliminar, "Eliminar artículo");
@@ -23,12 +25,6 @@ namespace FACT_SC
             toolTip.SetToolTip(btnAtras, "Atrás");
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            inicio formulario = new inicio();
-            formulario.Show();
-            this.Hide();
-        }
 
         private void btnAgregarUsuarios_Click(object sender, EventArgs e)
         {
@@ -38,7 +34,7 @@ namespace FACT_SC
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            inicio formulario = new inicio();
+            inicio formulario = new inicio(Rol);
             formulario.Show();
             this.Hide();
             

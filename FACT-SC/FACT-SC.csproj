@@ -86,6 +86,11 @@
     <Compile Include="agregarArticulos.Designer.cs">
       <DependentUpon>agregarArticulos.cs</DependentUpon>
     </Compile>
+    <Compile Include="db_facturacionDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_facturacionDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Persona.cs" />
     <Compile Include="articulos.cs">
       <SubType>Form</SubType>
@@ -197,6 +202,17 @@
     <EmbeddedResource Include="usuarios.resx">
       <DependentUpon>usuarios.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="db_facturacionDataSet.xsc">
+      <DependentUpon>db_facturacionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_facturacionDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_facturacionDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_facturacionDataSet.xss">
+      <DependentUpon>db_facturacionDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
