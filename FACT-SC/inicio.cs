@@ -12,28 +12,10 @@ namespace FACT_SC
 {
     public partial class inicio : Form
     {
-        int Rol;
-        public inicio(int pRol)
+        public inicio()
         {
-
             InitializeComponent();
             ToolTip toolTip = new ToolTip();
-            Rol = pRol;
-            if (Rol != 1)
-            {
-                btnUsuarios.Visible = false;
-                btnArticulos.Visible = false;
-                btnParametrizacion.Visible = false;
-                btnReporteria.Visible = false;
-
-               /* toolTip.SetToolTip(btnUsuarios, "Usuarios");
-                toolTip.SetToolTip(btnArticulos, "Artículos");
-                toolTip.SetToolTip(btnFacturacion, "Facturación");
-                toolTip.SetToolTip(btnReporteria, "Reportería");
-                toolTip.SetToolTip(btnParametrizacion, "Parametrización");
-                toolTip.SetToolTip(btnCotizacion, "Cotización");
-                toolTip.SetToolTip(btnLogOut, "Cerrar sesión");*/
-            }
             toolTip.SetToolTip(btnUsuarios, "Usuarios");
             toolTip.SetToolTip(btnArticulos, "Artículos");
             toolTip.SetToolTip(btnFacturacion, "Facturación");
@@ -46,42 +28,42 @@ namespace FACT_SC
 
         private void button1_Click(object sender, EventArgs e)
         {
-            usuarios formulario = new usuarios(Rol);
+            usuarios formulario = new usuarios();
             formulario.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            articulos formulario = new articulos(Rol);
+            articulos formulario = new articulos();
             formulario.Show();
             this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            facturacion formulario = new facturacion(Rol);
+            facturacion formulario = new facturacion();
             formulario.Show();
             this.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            cotizacion formulario = new cotizacion(Rol);
+            cotizacion formulario = new cotizacion();
             formulario.Show();
             this.Hide();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            parametrizacion formulario = new parametrizacion(Rol);
+            parametrizacion formulario = new parametrizacion();
             formulario.Show();
             this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Reporteria formulario = new Reporteria(Rol);
+            Reporteria formulario = new Reporteria();
             formulario.Show();
             this.Hide();
         }

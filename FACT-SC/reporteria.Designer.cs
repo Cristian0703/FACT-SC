@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnAtras = new System.Windows.Forms.Button();
-            this.CrystalReport11 = new FACT_SC.CrystalReport1();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
@@ -412,7 +411,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnAtras;
-        private CrystalReport1 CrystalReport11;
+
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;

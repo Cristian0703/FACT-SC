@@ -86,30 +86,29 @@
     <Compile Include="agregarArticulos.Designer.cs">
       <DependentUpon>agregarArticulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="db_facturacionDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>db_facturacionDataSet.xsd</DependentUpon>
+    <Compile Include="agregarUsuarios.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Persona.cs" />
+    <Compile Include="agregarUsuarios.Designer.cs">
+      <DependentUpon>agregarUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="articulos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="articulos.Designer.cs">
       <DependentUpon>articulos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Conexion.cs" />
+    <Compile Include="modificarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarUsuarios.Designer.cs">
+      <DependentUpon>modificarUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="cotizacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="cotizacion.Designer.cs">
       <DependentUpon>cotizacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CrystalReport1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="facturacion.cs">
       <SubType>Form</SubType>
@@ -135,7 +134,6 @@
     <Compile Include="parametrizacion.Designer.cs">
       <DependentUpon>parametrizacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonasDAL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="reporteria.cs">
@@ -144,32 +142,23 @@
     <Compile Include="reporteria.Designer.cs">
       <DependentUpon>reporteria.cs</DependentUpon>
     </Compile>
-    <Compile Include="agregarUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="agregarUsuarios.Designer.cs">
-      <DependentUpon>agregarUsuarios.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usuario1.cs" />
     <Compile Include="usuarios.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="usuarios.Designer.cs">
       <DependentUpon>usuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="UsuariosDAL.cs" />
     <EmbeddedResource Include="agregarArticulos.resx">
       <DependentUpon>agregarArticulos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarUsuarios.resx">
+      <DependentUpon>agregarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="articulos.resx">
       <DependentUpon>articulos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cotizacion.resx">
       <DependentUpon>cotizacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="facturacion.resx">
       <DependentUpon>facturacion.cs</DependentUpon>
@@ -179,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="inicio.resx">
       <DependentUpon>inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarUsuarios.resx">
+      <DependentUpon>modificarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="parametrizacion.resx">
       <DependentUpon>parametrizacion.cs</DependentUpon>
@@ -193,26 +185,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="agregarUsuarios.resx">
-      <DependentUpon>agregarUsuarios.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="reporteria.resx">
       <DependentUpon>reporteria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usuarios.resx">
       <DependentUpon>usuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="db_facturacionDataSet.xsc">
-      <DependentUpon>db_facturacionDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="db_facturacionDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>db_facturacionDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="db_facturacionDataSet.xss">
-      <DependentUpon>db_facturacionDataSet.xsd</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

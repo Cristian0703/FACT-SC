@@ -12,10 +12,9 @@ namespace FACT_SC
 {
     public partial class facturacion : Form
     {
-        int Rol;
-        public facturacion(int pRol)
+        public facturacion()
         {
-            Rol = pRol;
+
             InitializeComponent();
             ToolTip toolTip = new ToolTip();
             toolTip.SetToolTip(btnAtras,"Atrás");
@@ -25,16 +24,11 @@ namespace FACT_SC
             toolTip.SetToolTip(btnBuscar, "Realizar búsqueda");
             toolTip.SetToolTip(btnPagar, "Pagar");
             toolTip.SetToolTip(btnImprimir,"Imprimir fáctura");
-
-            txtSubTotal.Enabled = false;
-            txtDescuento.Enabled = false;
-            txtTotal.Enabled = false;
-            txtITBIS.Enabled = false;
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            inicio formulario = new inicio(Rol);
+            inicio formulario = new inicio();
             formulario.Show();
             this.Hide();
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace FACT_SC
 {
@@ -23,6 +24,11 @@ namespace FACT_SC
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

@@ -12,17 +12,15 @@ namespace FACT_SC
 {
     public partial class Reporteria : Form
     {
-        int Rol;
-        public Reporteria(int pRol)
+        public Reporteria()
         {
             InitializeComponent();
-            Rol = pRol;
 
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            inicio formulario = new inicio(Rol);
+            inicio formulario = new inicio();
             formulario.Show();
             this.Hide();
         }

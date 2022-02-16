@@ -33,5 +33,16 @@ namespace FACT_SC.Properties {
                 return ((string)(this["db_facturacionConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=facturacion;Integrated Securit" +
+            "y=True")]
+        public string facturacionConnectionString {
+            get {
+                return ((string)(this["facturacionConnectionString"]));
+            }
+        }
     }
 }

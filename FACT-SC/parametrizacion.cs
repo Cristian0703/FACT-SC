@@ -12,16 +12,14 @@ namespace FACT_SC
 {
     public partial class parametrizacion : Form
     {
-        int Rol;
-        public parametrizacion(int pRol)
+        public parametrizacion()
         {
             InitializeComponent();
-            Rol = pRol;
         }
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            inicio formulario = new inicio(Rol);
+            inicio formulario = new inicio();
             formulario.Show();
             this.Hide();
         }
@@ -44,44 +42,6 @@ namespace FACT_SC
         private void button1_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            int p = checkedListBox2.Items.Count;
-            if (checkBox1.Checked)
-            {
-                for (int i = 0; i < p; i++) {
-                    checkedListBox2.SetItemCheckState(i, CheckState.Checked);
-                }
-            }
-            else
-            {
-                for (int i = 0; i < p; i++)
-                {
-                    checkedListBox2.SetItemCheckState(i, CheckState.Unchecked);
-                }
-            }    
-            
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-            int p = checkedListBox1.Items.Count;
-            if (checkBox2.Checked)
-            {
-                for (int i = 0; i < p; i++)
-                {
-                    checkedListBox1.SetItemCheckState(i, CheckState.Checked);
-                }
-            }
-            else
-            {
-                for (int i = 0; i < p; i++)
-                {
-                    checkedListBox1.SetItemCheckState(i, CheckState.Unchecked);
-                }
-            }
         }
     }
 }
